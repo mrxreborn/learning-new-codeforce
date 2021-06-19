@@ -1,0 +1,10 @@
+#https://codeforces.com/problemset/problem/546/A
+#https://codeforces.com/contest/546/submission/119401672    
+
+k,n,w=map(int,input().split())
+print(max(0,k*w*-~w//2-n))
+
+```
+There's a math trick comes into play. The trick is:
+for 1x1 + 1x2 + 1x3 +..... 1xi = (1xi) x (i+1)//2
+```
