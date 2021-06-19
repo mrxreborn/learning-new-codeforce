@@ -4,3 +4,7 @@
 n,k=map(int,input().split())
 for i in range(k):n=[n//10,n-1][n%10>0]
 print(n)
+
+```
+[n%10>0] is determining the True and False only as 0|1; Rest of the things goes by the list function.
+```
