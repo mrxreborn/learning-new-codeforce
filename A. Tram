@@ -1,0 +1,26 @@
+#https://codeforces.com/problemset/problem/116/A
+x=int(input())
+t=y=0
+for x in range(x):
+	d,u=map(int,input().split())
+	t=t+(u-d)
+	y=max(t,y)
+print(y)
+
+```
+First declare the t and y value as 0
+t is just assgining it self the new value comes from u-d
+and after that, y just assigning itself the max value between t(new value) and y(we assigned it zero before.)
+
+The program will work like this, as for this inputs 
+4
+0 3
+2 5
+4 2
+4 0
+when t = 0 -> t=t+(u-d) -> t=0+(3-0) -> 3; now, t = 3
+  y=max(t,y) -> max (3,0) -> 3; now y=3
+  
+when t = 3 -> t=t+(u-d) -> t=3+(5-2) -> 6; now, t = 6
+y=max(t,y) -> max (6,3) -> 6; now y=6
+```
